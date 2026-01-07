@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zameen UI Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+
+   
+   <!-- ===== TOP NAV ===== -->
+<div class="top-nav py-2">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <!-- LEFT SIDE -->
+        <div class="d-flex align-items-center">
+            <div class="logo-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="logo-svg">
+                    <path fill="#FFF"
+                        d="M29.3 10.4V5h-7.5L16 .8.1 12.3v8.2l2.2-2.2v12.9H12v-7.8h8v7.8h9.7V18.3l2.2 2.2v-8.3l-2.6-1.8z">
+                    </path>
+                </svg>
+            </div>
+
+            <a href="#">PROPERTIES</a>
+            <a href="#">PLOT FINDER</a>
+            <a href="#">AREA GUIDES</a>
+            <a href="#">BLOG</a>
+            <a href="#">MAPS</a>
+            <a href="#">TOOLS</a>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="top-right d-flex align-items-center">
+
+            <a href="#" class="property-id">Property ID</a>
+
+            <a href="#" class="add-property">+ Add Property</a>
+
+            <a href="#" class="lang">اردو</a>
+
+            <!-- PROFILE ICON -->
+            <span class="icon">
+                <!-- profile svg -->
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4 22c0-4 4-6 8-6s8 2 8 6"></path>
+                </svg>
+            </span>
+
+            <!-- SETTINGS ICON -->
+            <span class="icon">
+                <!-- settings svg -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 8a4 4 0 100 8 4 4 0 000-8z"></path>
+                    <path
+                        d="M2 12h2m16 0h2M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4l1.4 1.4M4.9 19.1l1.4-1.4m11.4-11.4l1.4-1.4">
+                    </path>
+                </svg>
+            </span>
+
+        </div>
+    </div>
+</div>
+
+    <!-- ===== SUB NAV ===== -->
+    <div class="sub-nav py-3">
+        <div class="container d-flex align-items-center">
+            <div class="logo-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" class="_89fb456e logo-svg" viewBox="0 0 135 27">
+                    <path fill="#231F20"
+                        d="M161.8-154.1v-6.6c0-1.7-.6-2.8-1.8-2.8-.9 0-1.5.6-1.7 1.3-.1.3-.1.7-.1 1v7h-3.6v-6.7c0-1.5-.5-2.6-1.7-2.6-1 0-1.5.7-1.7 1.4-.1.3-.1.6-.1.9v7h-3.6v-8.2c0-1.5 0-2.8-.1-3.8h3.2l.2 1.6h.1c.5-.8 1.6-1.9 3.6-1.9 1.6 0 2.8.8 3.3 2 .4-.6 1-1.1 1.6-1.5.7-.4 1.4-.6 2.3-.6 2.3 0 4.1 1.6 4.1 5.2v7.1h-4zm-23.1-9.6c-1.8 0-2.5 1.8-2.5 3.6 0 2.1.9 3.6 2.5 3.6 1.5 0 2.4-1.5 2.4-3.6 0-1.8-.7-3.6-2.4-3.6zm-.1 9.9c-3.5 0-6.2-2.3-6.2-6.2 0-3.9 2.6-6.4 6.4-6.4 3.7 0 6.2 2.5 6.2 6.2 0 4.4-3.2 6.4-6.4 6.4zm-8.2-9.4c-.4-.2-1.1-.4-2.1-.4-2 0-3.3 1.4-3.2 3.4 0 2.2 1.5 3.4 3.3 3.4.9 0 1.6-.1 2.1-.4l.4 2.8c-.7.3-1.9.5-3.4.5-3.9 0-6.4-2.4-6.4-6.2 0-3.5 2.4-6.4 6.9-6.4 1 0 2.1.2 2.9.5l-.5 2.8zm-12.9 9.4c-1.3 0-2.2-1-2.2-2.3 0-1.3.9-2.3 2.2-2.3 1.3 0 2.2.9 2.2 2.3 0 1.3-.9 2.3-2.2 2.3zm-8.7-.3v-6.7c0-1.6-.5-2.6-1.9-2.6-1 0-1.7.7-1.9 1.4-.1.2-.1.6-.1.9v6.9h-3.7v-8.2c0-1.5 0-2.8-.1-3.8h3.3l.2 1.7h.1c.5-.8 1.7-1.9 3.7-1.9 2.5 0 4.3 1.6 4.3 5.2v7.1h-3.9zm-15.5-9.8c-1.6 0-2.2 1.4-2.3 2.4h4.4c0-.9-.4-2.4-2.1-2.4zm5.5 5H91c.1 1.6 1.7 2.3 3.4 2.3 1.3 0 2.3-.2 3.3-.5l.5 2.5c-1.2.5-2.7.7-4.4.7-4.1 0-6.4-2.4-6.4-6.1 0-3.1 1.9-6.4 6.1-6.4 3.9 0 5.4 3 5.4 6 0 .6-.1 1.2-.1 1.5zm-18.5-5c-1.6 0-2.2 1.4-2.3 2.4h4.4c0-.9-.4-2.4-2.1-2.4zm5.5 5H78c.1 1.6 1.7 2.3 3.4 2.3 1.3 0 2.3-.2 3.3-.5l.5 2.5c-1.2.5-2.7.7-4.4.7-4.1 0-6.4-2.4-6.4-6.1 0-3.1 1.9-6.4 6.1-6.4 3.9 0 5.4 3 5.4 6 0 .6-.1 1.2-.1 1.5zm-17.3 4.8v-6.6c0-1.7-.6-2.8-1.8-2.8-.9 0-1.5.6-1.7 1.3-.1.3-.1.7-.1 1v7h-3.6v-6.7c0-1.5-.5-2.6-1.7-2.6-1 0-1.5.7-1.7 1.4-.1.3-.1.6-.1.9v7h-3.6v-8.2c0-1.5 0-2.8-.1-3.8H57l.2 1.6h.1c.5-.8 1.6-1.9 3.6-1.9 1.6 0 2.8.8 3.3 2 .4-.6 1-1.1 1.6-1.5.7-.4 1.4-.6 2.3-.6 2.3 0 4.1 1.6 4.1 5.2v7.1h-3.7zm-21.2-5.7c-2 0-3.5.4-3.5 1.9 0 1 .6 1.4 1.5 1.4s1.7-.6 1.9-1.4c0-.2.1-.4.1-.6v-1.3zm.5 5.7l-.2-1.2h-.1c-.8 1-2 1.5-3.4 1.5-2.4 0-3.9-1.8-3.9-3.7 0-3.1 2.8-4.6 7.1-4.6v-.2c0-.6-.3-1.6-2.2-1.6-1.2 0-2.5.4-3.3.9l-.7-2.4c.8-.5 2.5-1.1 4.7-1.1 4 0 5.3 2.4 5.3 5.2v4.2c0 1.2 0 2.3.2 2.9h-3.5zm-8.9-3v3H28.4v-2.1l3.8-4.8c.7-.8 1.2-1.4 1.9-2.1h-5.3v-3h9.9v2.2l-3.6 4.6c-.7.8-1.3 1.6-2 2.2h5.8z">
+                    </path>
+                    <path fill="#F37A20"
+                        d="M165.5-143.3h-1.3v-5.6h1.3v5.6zm-1.4-6.4v-1.2h1.4v1.2h-1.4zm-2.7 4.1c-.3-.1-.8-.2-1.3-.2-.8 0-1.3.3-1.3.9 0 .5.5.8 1.1.8.8 0 1.5-.5 1.5-1.2v-.3zm-.1 2.3v-.7c-.4.5-1 .8-1.8.8-1.1 0-2-.6-2-1.7 0-1.2 1-1.8 2.3-1.8.7 0 1.1.1 1.5.2v-.1c0-.8-.5-1.2-1.4-1.2-.6 0-1.1.1-1.6.3l-.3-1c.6-.3 1.2-.5 2.1-.5 1.6 0 2.5.9 2.5 2.4v3.3h-1.3zm-6.4 0v-3.1h-3.5v3.1H150v-7.4h1.3v3.1h3.5v-3.1h1.3v7.4h-1.2zm-10.9-2.3c-.3-.1-.8-.2-1.3-.2-.8 0-1.3.3-1.3.9 0 .5.5.8 1.1.8.8 0 1.5-.5 1.5-1.2v-.3zm-.1 2.3v-.7c-.4.5-1 .8-1.8.8-1.1 0-2-.6-2-1.7 0-1.2 1-1.8 2.3-1.8.7 0 1.1.1 1.5.2v-.1c0-.8-.5-1.2-1.4-1.2-.6 0-1.1.1-1.6.3l-.3-1c.6-.3 1.2-.5 2.1-.5 1.6 0 2.5.9 2.5 2.4v3.3h-1.3zm-6.1-4.5v2.7c0 .5.3.7.7.7.3 0 .5-.1.8-.2v1c-.3.2-.7.3-1.2.3-.9 0-1.6-.4-1.6-1.6v-2.9h-.7v-1.1h.7v-1.5h1.3v1.5h1.5v1.1h-1.5zm-4.3 2.2c-.3-.1-.8-.2-1.3-.2-.8 0-1.3.3-1.3.9 0 .5.5.8 1.1.8.8 0 1.5-.5 1.5-1.2v-.3zm0 2.3v-.7c-.4.5-1 .8-1.8.8-1.1 0-2-.6-2-1.7 0-1.2 1-1.8 2.3-1.8.7 0 1.1.1 1.5.2v-.1c0-.8-.5-1.2-1.4-1.2-.6 0-1.1.1-1.6.3l-.3-1c.6-.3 1.2-.5 2.1-.5 1.6 0 2.5.9 2.5 2.4v3.3h-1.3zm-7.4-6.2h-1.5v2.7h1.5c1 0 1.6-.5 1.6-1.3 0-.9-.6-1.4-1.6-1.4zm-.1 3.8h-1.5v2.4h-1.3v-7.4h2.9c1.7 0 2.8 1 2.8 2.5.1 1.7-1.2 2.5-2.9 2.5zm-8.9 2.4v-3.2c0-.9-.4-1.4-1.2-1.4-.7 0-1.3.5-1.3 1.4v3.1h-1.3v-5.6h1.3v.9c.4-.5.9-1 1.7-1 1.3 0 2 .8 2 2.1v3.6h-1.2zm-5.3 0h-1.3v-5.6h1.3v5.6zm-1.4-6.4v-1.2h1.4v1.2h-1.4zm-2.7 4.1c-.3-.1-.8-.2-1.3-.2-.8 0-1.3.3-1.3.9 0 .5.5.8 1.1.8.8 0 1.5-.5 1.5-1.2v-.3zm-.1 2.3v-.7c-.4.5-1 .8-1.8.8-1.1 0-2-.6-2-1.7 0-1.2 1-1.8 2.3-1.8.7 0 1.1.1 1.5.2v-.1c0-.8-.5-1.2-1.4-1.2-.6 0-1.1.1-1.6.3l-.3-1c.6-.3 1.2-.5 2.1-.5 1.6 0 2.5.9 2.5 2.4v3.3h-1.3zm-6.2 0v-3.2c0-.9-.4-1.4-1.1-1.4-.7 0-1.2.5-1.2 1.4v3.1h-1.3v-3.2c0-.9-.4-1.4-1.1-1.4-.7 0-1.2.5-1.2 1.4v3.1h-1.3v-5.6h1.3v.8c.4-.5.8-1 1.7-1 .8 0 1.4.4 1.7 1 .5-.6 1-1 1.9-1 1.2 0 2 .8 2 2.1v3.6h-1.4zm-10.1 0v-.9c-.4.5-.9 1-1.7 1-1.3 0-2-.8-2-2.1v-3.6h1.3v3.2c0 .9.4 1.4 1.2 1.4.7 0 1.3-.5 1.3-1.4v-3.1h1.3v5.6h-1.4zm-6.7 0v-3.1h-3.5v3.1h-1.3v-7.4h1.3v3.1h3.5v-3.1h1.3v7.4h-1.3zm-11.3 1.6l-.1-.5c.6-.1 1-.5.9-1h-.5v-1.4H75v1.2c-.1 1.1-.6 1.6-1.7 1.7zm-2.4-3.9c-.3-.1-.8-.2-1.3-.2-.8 0-1.3.3-1.3.9 0 .5.5.8 1.1.8.8 0 1.5-.5 1.5-1.2v-.3zm-.1 2.3v-.7c-.4.5-1 .8-1.8.8-1.1 0-2-.6-2-1.7 0-1.2 1-1.8 2.3-1.8.7 0 1.1.1 1.5.2v-.1c0-.8-.5-1.2-1.4-1.2-.6 0-1.1.1-1.6.3l-.3-1c.6-.3 1.2-.5 2.1-.5 1.6 0 2.5.9 2.5 2.4v3.3h-1.3zm-6.2-4.5v2.7c0 .5.3.7.7.7.3 0 .5-.1.8-.2v1c-.3.2-.7.3-1.2.3-.9 0-1.6-.4-1.6-1.6v-2.9h-.7v-1.1h.7v-1.5h1.3v1.5h1.5v1.1h-1.5zm-4.2 2.2c-.3-.1-.8-.2-1.3-.2-.8 0-1.3.3-1.3.9 0 .5.5.8 1.1.8.8 0 1.5-.5 1.5-1.2v-.3zm0 2.3v-.7c-.4.5-1 .8-1.8.8-1.1 0-2-.6-2-1.7 0-1.2 1-1.8 2.3-1.8.7 0 1.1.1 1.5.2v-.1c0-.8-.5-1.2-1.4-1.2-.6 0-1.1.1-1.6.3l-.3-1c.6-.3 1.2-.5 2.1-.5 1.6 0 2.5.9 2.5 2.4v3.3h-1.3zm-7.4-6.2h-1.5v2.7H53c1 0 1.6-.5 1.6-1.3 0-.9-.7-1.4-1.6-1.4zm-.1 3.8h-1.5v2.4h-1.3v-7.4H53c1.7 0 2.8 1 2.8 2.5.1 1.7-1.2 2.5-2.9 2.5zm-7.2-1.9c-1.1 0-1.9.7-1.9 2.2v2.1h-1.3v-5.6h1.3v1.3c.3-.8 1-1.4 2-1.4l-.1 1.4zm-6 2c-.3-.1-.8-.2-1.3-.2-.8 0-1.3.3-1.3.9 0 .5.5.8 1.1.8.8 0 1.5-.5 1.5-1.2v-.3zm0 2.3v-.7c-.4.5-1 .8-1.8.8-1.1 0-2-.6-2-1.7 0-1.2 1-1.8 2.3-1.8.7 0 1.1.1 1.5.2v-.1c0-.8-.5-1.2-1.4-1.2-.6 0-1.1.1-1.6.3l-.3-1c.6-.3 1.2-.5 2.1-.5 1.6 0 2.5.9 2.5 2.4v3.3h-1.3zm-6.4 0v-3.1h-3.5v3.1h-1.3v-7.4h1.3v3.1h3.5v-3.1h1.3v7.4h-1.3z">
+                    </path>
+                    <path fill="#FFF" fill-rule="evenodd" d="M-3.8-165.7H20v22.5H-3.8z" clip-rule="evenodd"></path>
+                    <path fill="#00A551" fill-rule="evenodd"
+                        d="M22-164.7v-5.6h-7.8L8-174.7l-16.6 11.9v7.9l2.6-1.9v13.5h5.6c-.3-.9-.3-1.8.2-2.7l6.5-11.4-6 1.5a3 3 0 0 1-3.6-2.1 3 3 0 0 1 2.1-3.6l12.7-3.2h1.3c.1 0 .3.1.4.1.3.1.5.2.8.3 1.5.9 2 2.8 1.2 4.4L9-149.2l6.7-1.7a3 3 0 0 1 3.6 2.1 3 3 0 0 1-2.1 3.6l-7.5 1.9h12.5v-13.5l2.6 1.9v-7.9l-2.8-1.9z"
+                        clip-rule="evenodd"></path>
+                    <path fill="#231F20"
+                        d="M132.2 16.7v-5.1c0-1.4-.4-2.1-1.4-2.1-.7 0-1.1.5-1.3 1-.1.2-.1.5-.1.7v5.5h-2.8v-5.2c0-1.2-.4-2-1.3-2-.7 0-1.2.6-1.4 1.1-.1.2-.1.5-.1.7v5.4H121v-6.4c0-1.2 0-2.2-.1-3h2.4l.1 1.3h.1c.4-.6 1.2-1.5 2.8-1.5 1.2 0 2.2.6 2.6 1.6.3-.5.8-.9 1.2-1.1.5-.3 1.1-.5 1.8-.5 1.8 0 3.2 1.3 3.2 4v5.5h-2.9zm-18-7.5c-1.4 0-1.9 1.4-1.9 2.8 0 1.6.7 2.8 1.9 2.8 1.1 0 1.9-1.1 1.9-2.8 0-1.4-.6-2.8-1.9-2.8zm0 7.7c-2.7 0-4.8-1.8-4.8-4.8s2-4.9 5-4.9c2.9 0 4.8 2 4.8 4.8-.1 3.4-2.5 4.9-5 4.9zm-6.4-7.2c-.3-.2-.9-.3-1.6-.3-1.5 0-2.5 1.1-2.5 2.6 0 1.7 1.1 2.6 2.6 2.6.7 0 1.2-.1 1.7-.3l.3 2.1c-.5.2-1.5.4-2.6.4-3 0-4.9-1.8-4.9-4.8 0-2.7 1.9-5 5.3-5 .8 0 1.6.1 2.2.4l-.5 2.3zm-10 7.2c-1 0-1.7-.7-1.7-1.8 0-1 .7-1.8 1.7-1.8s1.7.7 1.7 1.8-.7 1.8-1.7 1.8zm-6.7-.2v-5.2c0-1.2-.4-2-1.5-2-.8 0-1.3.6-1.5 1.1-.1.2-.1.5-.1.7v5.4h-2.9v-6.4c0-1.2 0-2.2-.1-3h2.5l.1 1.3h.1c.4-.6 1.3-1.5 2.9-1.5 1.9 0 3.3 1.3 3.3 4v5.5h-2.8zM79 9.1c-1.2 0-1.7 1.1-1.8 1.9h3.4c.1-.7-.2-1.9-1.6-1.9zm4.3 3.9h-6c.1 1.2 1.3 1.8 2.6 1.8 1 0 1.8-.1 2.6-.4l.4 2c-1 .4-2.1.6-3.4.6-3.2 0-5-1.8-5-4.8 0-2.4 1.5-5 4.7-5 3 0 4.2 2.3 4.2 4.7 0 .4-.1.9-.1 1.1zM68.9 9.1c-1.2 0-1.7 1.1-1.8 1.9h3.4c.1-.7-.2-1.9-1.6-1.9zm4.3 3.9h-6c.1 1.2 1.3 1.8 2.6 1.8 1 0 1.8-.1 2.6-.4l.4 2c-1 .4-2.1.6-3.4.6-3.2 0-5-1.8-5-4.8 0-2.4 1.5-5 4.7-5 3 0 4.2 2.3 4.2 4.7 0 .4-.1.9-.1 1.1zm-13.4 3.7v-5.1c0-1.4-.4-2.1-1.4-2.1-.7 0-1.1.5-1.3 1-.1.2-.1.5-.1.8v5.5h-2.8v-5.2c0-1.2-.4-2-1.3-2-.7 0-1.2.6-1.4 1.1-.1.2-.1.5-.1.7v5.4h-2.8v-6.4c0-1.2 0-2.2-.1-3h2.4l.1 1.2h.1c.4-.6 1.2-1.5 2.8-1.5 1.2 0 2.2.6 2.6 1.6.3-.5.8-.9 1.2-1.1.5-.3 1.1-.5 1.8-.5 1.8 0 3.2 1.3 3.2 4v5.5h-2.9zm-16.4-4.4c-1.5 0-2.7.3-2.7 1.5 0 .7.5 1.1 1.1 1.1.7 0 1.3-.5 1.5-1.1 0-.2.1-.3.1-.5v-1zm.3 4.4l-.2-.9h-.1c-.6.7-1.6 1.1-2.7 1.1-1.9 0-3-1.4-3-2.9 0-2.4 2.2-3.6 5.5-3.6v-.1c0-.5-.3-1.2-1.7-1.2-1 0-2 .3-2.6.7L38.5 8c.6-.4 1.9-.8 3.6-.8 3.1 0 4.1 1.8 4.1 4v3.2c0 .9 0 1.8.1 2.3h-2.6zm-6.9-2.3v2.3h-8.1V15l2.9-3.7c.5-.6 1-1.1 1.5-1.7H29V7.4h7.6v1.7l-2.8 3.5c-.5.6-1 1.2-1.5 1.7h4.5z">
+                    </path>
+                    <path fill="#F37A20"
+                        d="M135 25.1h-1v-4.3h1v4.3zm-1.1-5v-.9h1.1v.9h-1.1zm-2.1 3.2c-.3-.1-.6-.2-1-.2-.6 0-1 .3-1 .7 0 .4.4.6.8.6.7 0 1.1-.4 1.1-.9v-.2zm0 1.8v-.5c-.3.4-.7.6-1.4.6-.8 0-1.5-.5-1.5-1.3 0-.9.7-1.4 1.8-1.4.5 0 .9.1 1.2.2v-.1c0-.6-.4-.9-1.1-.9-.5 0-.8.1-1.2.3l-.3-.8c.5-.2.9-.4 1.6-.4 1.3 0 1.9.7 1.9 1.8v2.6h-1zm-5 0v-2.4H124v2.4h-1v-5.7h1v2.4h2.7v-2.4h1v5.7h-.9zm-8.5-1.8c-.3-.1-.6-.2-1-.2-.6 0-1 .3-1 .7 0 .4.4.6.8.6.7 0 1.1-.4 1.1-.9v-.2zm0 1.8v-.5c-.3.4-.7.6-1.4.6-.8 0-1.5-.5-1.5-1.3 0-.9.7-1.4 1.8-1.4.5 0 .9.1 1.2.2v-.1c0-.6-.4-.9-1.1-.9-.5 0-.8.1-1.2.3l-.3-.8c.5-.2.9-.4 1.6-.4 1.3 0 1.9.7 1.9 1.8v2.6h-1zm-4.8-3.5v2.1c0 .4.2.5.5.5.2 0 .4 0 .6-.1v.9a2 2 0 0 1-.9.2c-.7 0-1.2-.3-1.2-1.3v-2.3h-.5v-.9h.5v-1.2h1v1.2h1.2v.9h-1.2zm-3.3 1.7c-.3-.1-.6-.2-1-.2-.6 0-1 .3-1 .7 0 .4.4.6.8.6.7 0 1.1-.4 1.1-.9v-.2zm0 1.8v-.5c-.3.4-.7.6-1.4.6-.8 0-1.5-.5-1.5-1.3 0-.9.7-1.4 1.8-1.4.5 0 .9.1 1.2.2v-.1c0-.6-.4-.9-1.1-.9-.5 0-.8.1-1.2.3l-.3-.8c.5-.2.9-.4 1.6-.4 1.3 0 1.9.7 1.9 1.8v2.6h-1zm-5.8-4.8h-1.2v2.1h1.2c.8 0 1.2-.4 1.2-1 .1-.8-.4-1.1-1.2-1.1zm0 3h-1.1v1.8h-1v-5.7h2.3c1.3 0 2.2.8 2.2 1.9-.1 1.3-1.1 2-2.4 2zm-6.9 1.8v-2.5c0-.7-.3-1.1-.9-1.1-.6 0-1 .4-1 1.1V25h-1v-4.3h1v.7c.3-.4.7-.8 1.4-.8 1 0 1.5.7 1.5 1.7v2.8h-1zm-4.2 0h-1v-4.3h1v4.3zm-1-5v-.9h1.1v.9h-1.1zm-2.2 3.2c-.3-.1-.6-.2-1-.2-.6 0-1 .3-1 .7 0 .4.4.6.8.6.7 0 1.1-.4 1.1-.9v-.2zm0 1.8v-.5c-.3.4-.7.6-1.4.6-.8 0-1.5-.5-1.5-1.3 0-.9.7-1.4 1.8-1.4.5 0 .9.1 1.2.2v-.1c0-.6-.4-.9-1.1-.9-.5 0-.8.1-1.2.3l-.3-.8c.5-.2.9-.4 1.6-.4 1.3 0 1.9.7 1.9 1.8v2.6h-1zm-4.8 0v-2.5c0-.7-.3-1.1-.9-1.1-.5 0-.9.4-.9 1.1V25h-1v-2.5c0-.7-.3-1-.9-1s-.9.4-.9 1.1V25h-1v-4.3h1v.7c.3-.4.7-.7 1.3-.7.6 0 1.1.3 1.3.8.4-.5.8-.8 1.5-.8.9 0 1.5.6 1.5 1.7v2.8h-1zm-7.8 0v-.7c-.3.4-.7.8-1.4.8-1 0-1.5-.7-1.5-1.7v-2.8h1v2.5c0 .7.3 1.1.9 1.1.6 0 1-.4 1-1.1v-2.4h1v4.3h-1zm-5.2 0v-2.4h-2.7v2.4h-1v-5.7h1v2.4h2.7v-2.4h1v5.7h-1zm-8.8 1.2l-.1-.4c.5-.1.7-.4.7-.8h-.4V24h1.1v1c0 .8-.4 1.2-1.3 1.3zm-1.9-3c-.3-.1-.6-.2-1-.2-.6 0-1 .3-1 .7 0 .4.4.6.8.6.7 0 1.1-.4 1.1-.9v-.2zm0 1.8v-.5c-.3.4-.7.6-1.4.6-.8 0-1.5-.5-1.5-1.3 0-.9.7-1.4 1.8-1.4.5 0 .9.1 1.2.2v-.1c0-.6-.4-.9-1.1-.9-.5 0-.8.1-1.2.3l-.4-.9c.5-.2.9-.4 1.6-.4 1.3 0 1.9.7 1.9 1.8v2.6h-.9zm-4.8-3.5v2.1c0 .4.2.5.5.5.2 0 .4 0 .6-.1v.9a2 2 0 0 1-.9.2c-.7 0-1.2-.3-1.2-1.3v-2.3h-.5v-.9h.5v-1.2h1v1.2H58v.9h-1.2zm-3.3 1.7c-.3-.1-.6-.2-1-.2-.6 0-1 .3-1 .7 0 .4.4.6.8.6.7 0 1.1-.4 1.1-.9v-.2zm0 1.8v-.5c-.3.4-.7.6-1.4.6-.8 0-1.5-.5-1.5-1.3 0-.9.7-1.4 1.8-1.4.5 0 .9.1 1.2.2v-.1c0-.6-.4-.9-1.1-.9-.5 0-.8.1-1.2.3l-.3-.8c.5-.2.9-.4 1.6-.4 1.3 0 1.9.7 1.9 1.8v2.6h-1zm-5.7-4.8h-1.2v2.1h1.2c.8 0 1.2-.4 1.2-1 0-.8-.5-1.1-1.2-1.1zm-.1 3h-1.1v1.8h-1v-5.7h2.3c1.3 0 2.2.8 2.2 1.9-.1 1.3-1.1 2-2.4 2zm-5.6-1.6c-.9 0-1.5.6-1.5 1.7V25h-1v-4.3h1v1c.3-.6.8-1.1 1.5-1.1v1.1zm-4.6 1.6c-.3-.1-.6-.2-1-.2-.6 0-1 .3-1 .7 0 .4.4.6.8.6.7 0 1.1-.4 1.1-.9v-.2zm0 1.8v-.5c-.3.4-.7.6-1.4.6-.8 0-1.5-.5-1.5-1.3 0-.9.7-1.4 1.8-1.4.5 0 .9.1 1.2.2v-.1c0-.6-.4-.9-1.1-.9-.5 0-.8.1-1.2.3l-.3-.8c.5-.2.9-.4 1.6-.4 1.3 0 1.9.7 1.9 1.8v2.6h-1zm-5 0v-2.4h-2.7v2.4h-1v-5.7h1v2.4h2.7v-2.4h1v5.7h-1z">
+                    </path>
+                    <path fill="#FFF" fill-rule="evenodd" d="M3.7 7.7h18.5v17.4H3.7z" clip-rule="evenodd"></path>
+                    <path fill="#00A551" fill-rule="evenodd"
+                        d="M23.8 8.5V4.2h-6.1L12.9.8 0 10v6.1l2-1.5v10.5h4.4c-.2-.7-.2-1.4.2-2.1l5-8.8-4.7 1.2c-1.2.3-2.5-.4-2.8-1.7-.3-1.2.4-2.5 1.7-2.8l9.9-2.4h.9c.1 0 .2 0 .3.1.2.1.4.1.6.2 1.2.7 1.6 2.2.9 3.4l-4.8 8.4 5.2-1.3c1.2-.3 2.5.4 2.8 1.7.3 1.2-.4 2.5-1.7 2.8l-5.8 1.5h9.7V14.8l2 1.5V10l-2-1.5z"
+                        clip-rule="evenodd"></path>
+                    <path fill="#231F20"
+                        d="M417.6-114.1v-7.9c0-2.1-.7-3.3-2.1-3.3-1 0-1.8.7-2.1 1.6-.1.3-.2.8-.2 1.2v8.5h-4.4v-8.2c0-1.9-.7-3.1-2.1-3.1-1.2 0-1.9.9-2.1 1.6-.1.4-.2.8-.2 1.1v8.5H400v-9.9c0-1.8-.1-3.4-.1-4.7h3.8l.2 2h.1c.6-.9 1.9-2.3 4.4-2.3 1.9 0 3.4 1 4 2.5h.1c.5-.7 1.2-1.3 1.9-1.8.8-.5 1.7-.7 2.8-.7 2.8 0 4.9 2 4.9 6.3v8.6h-4.5zm-28.1-11.7c-2.2 0-3 2.2-3 4.4 0 2.5 1 4.4 3 4.4 1.8 0 2.9-1.8 2.9-4.4 0-2.2-.8-4.4-2.9-4.4zm-.1 12c-4.3 0-7.6-2.8-7.6-7.5s3.1-7.7 7.8-7.7c4.5 0 7.5 3.1 7.5 7.5 0 5.3-3.8 7.7-7.7 7.7zm-9.9-11.3c-.5-.2-1.3-.4-2.5-.4-2.4 0-3.9 1.7-3.9 4.1 0 2.7 1.8 4.1 4 4.1 1.1 0 1.9-.2 2.6-.4l.5 3.3c-.8.4-2.3.7-4.1.7-4.7 0-7.7-2.9-7.7-7.5 0-4.3 2.9-7.8 8.4-7.8 1.2 0 2.5.2 3.5.6l-.8 3.3zm-15.7 11.3c-1.6 0-2.7-1.2-2.7-2.7 0-1.6 1.1-2.8 2.7-2.8s2.7 1.1 2.7 2.8c0 1.6-1.1 2.7-2.7 2.7zm-10.5-.3v-8.1c0-1.9-.7-3.2-2.3-3.2-1.3 0-2 .9-2.3 1.7-.1.3-.2.7-.2 1.1v8.4H344v-9.9c0-1.8-.1-3.4-.1-4.7h3.9l.2 2h.1c.6-.9 2.1-2.3 4.5-2.3 3 0 5.2 2 5.2 6.3v8.7h-4.5zM334.5-126c-1.9 0-2.7 1.7-2.8 3h5.4c0-1.2-.5-3-2.6-3zm6.6 6.1h-9.4c.1 1.9 2 2.8 4.1 2.8 1.6 0 2.8-.2 4-.6l.6 3.1c-1.5.6-3.3.9-5.3.9-5 0-7.8-2.9-7.8-7.4 0-3.7 2.3-7.8 7.4-7.8 4.7 0 6.5 3.7 6.5 7.3.1.6 0 1.3-.1 1.7zm-22.4-6.1c-1.9 0-2.7 1.7-2.8 3h5.4c0-1.2-.5-3-2.6-3zm6.7 6.1H316c.1 1.9 2 2.8 4.1 2.8 1.6 0 2.8-.2 4-.6l.6 3.1c-1.5.6-3.3.9-5.3.9-5 0-7.8-2.9-7.8-7.4 0-3.7 2.3-7.8 7.4-7.8 4.7 0 6.5 3.7 6.5 7.3 0 .6-.1 1.3-.1 1.7zm-21 5.8v-7.9c0-2.1-.7-3.3-2.1-3.3-1 0-1.8.7-2.1 1.6-.1.3-.2.8-.2 1.2v8.5h-4.4v-8.2c0-1.9-.7-3.1-2.1-3.1-1.2 0-1.9.9-2.1 1.6-.1.4-.2.8-.2 1.1v8.5h-4.4v-9.9c0-1.8-.1-3.4-.1-4.7h3.8l.2 2h.1c.6-.9 1.9-2.3 4.4-2.3 1.9 0 3.4 1 4 2.5h.1c.5-.7 1.2-1.3 1.9-1.8.8-.5 1.7-.7 2.8-.7 2.8 0 4.9 2 4.9 6.3v8.6h-4.5zm-25.6-6.9c-2.4 0-4.2.5-4.2 2.3 0 1.2.8 1.7 1.8 1.7 1.1 0 2.1-.7 2.4-1.7.1-.2.1-.5.1-.8v-1.5zm.5 6.9l-.3-1.5c-1 1.2-2.4 1.8-4.2 1.8-3 0-4.7-2.1-4.7-4.5 0-3.8 3.4-5.6 8.6-5.6v-.2c0-.8-.4-1.9-2.7-1.9-1.5 0-3.1.5-4 1.1l-.8-2.9c1-.6 3-1.3 5.7-1.3 4.9 0 6.4 2.9 6.4 6.3v5.1c0 1.4.1 2.7.2 3.6h-4.2zm-10.7-3.6v3.6h-12.7v-2.6l4.6-5.8c.8-1 1.5-1.7 2.3-2.6v-.1h-6.4v-3.6h11.9v2.7l-4.4 5.5c-.8 1-1.6 1.9-2.4 2.7v.1h7.1z">
+                    </path>
+                    <path fill="#F37A20"
+                        d="M421.9-101h-1.5v-6.8h1.5v6.8zm-1.6-7.8v-1.5h1.7v1.5h-1.7zm-3.3 4.9c-.4-.2-.9-.3-1.5-.3-1 0-1.5.4-1.5 1.1 0 .6.6 1 1.3 1 1 0 1.8-.6 1.8-1.4v-.4zm-.1 2.9v-.8c-.5.6-1.2 1-2.2 1-1.3 0-2.4-.7-2.4-2.1 0-1.5 1.2-2.2 2.7-2.2.8 0 1.3.1 1.9.3v-.2c0-.9-.6-1.4-1.7-1.4-.8 0-1.3.2-1.9.4l-.4-1.2c.7-.3 1.5-.6 2.6-.6 2 0 3 1.1 3 2.9v4h-1.6zm-7.8 0v-3.8h-4.3v3.8h-1.6v-9h1.6v3.7h4.3v-3.7h1.6v9h-1.6zm-13.2-2.9c-.4-.2-.9-.3-1.5-.3-1 0-1.5.4-1.5 1.1 0 .6.6 1 1.3 1 1 0 1.8-.6 1.8-1.4v-.4zm0 2.9v-.8c-.5.6-1.2 1-2.2 1-1.3 0-2.4-.7-2.4-2.1 0-1.5 1.2-2.2 2.7-2.2.8 0 1.3.1 1.9.3v-.2c0-.9-.6-1.4-1.7-1.4-.8 0-1.3.2-1.9.4l-.4-1.2c.7-.3 1.5-.6 2.6-.6 2 0 3 1.1 3 2.9v4h-1.6zm-7.5-5.4v3.3c0 .6.3.8.8.8.3 0 .7-.1 1-.2v1.3c-.4.2-.8.3-1.4.3-1.1 0-1.9-.5-1.9-2v-3.6h-.9v-1.3h.9v-1.9h1.5v1.9h1.8v1.3h-1.8zm-5.2 2.5c-.4-.2-.9-.3-1.5-.3-1 0-1.5.4-1.5 1.1 0 .6.6 1 1.3 1 1 0 1.8-.6 1.8-1.4v-.4zm0 2.9v-.8c-.5.6-1.2 1-2.2 1-1.3 0-2.4-.7-2.4-2.1 0-1.5 1.2-2.2 2.7-2.2.8 0 1.3.1 1.9.3v-.2c0-.9-.6-1.4-1.7-1.4-.8 0-1.3.2-1.9.4l-.4-1.2c.7-.3 1.5-.6 2.6-.6 2 0 3 1.1 3 2.9v4h-1.6zm-9-7.5h-1.8v3.2h1.8c1.2 0 1.9-.7 1.9-1.6.1-1.1-.7-1.6-1.9-1.6zm0 4.6h-1.8v2.9h-1.6v-9h3.5c2.1 0 3.4 1.2 3.4 3 .1 2.1-1.6 3.1-3.5 3.1zm-10.8 2.9v-3.8c0-1.1-.5-1.7-1.4-1.7-.9 0-1.5.6-1.5 1.7v3.8H359v-6.8h1.5v1.1c.4-.6 1.1-1.2 2.1-1.2 1.5 0 2.4 1 2.4 2.6v4.3h-1.6zm-6.5 0h-1.5v-6.8h1.5v6.8zm-1.7-7.8v-1.5h1.7v1.5h-1.7zm-3.3 4.9c-.4-.2-.9-.3-1.5-.3-1 0-1.5.4-1.5 1.1 0 .6.6 1 1.3 1 1 0 1.8-.6 1.8-1.4v-.4zm0 2.9v-.8c-.5.6-1.2 1-2.2 1-1.3 0-2.4-.7-2.4-2.1 0-1.5 1.2-2.2 2.7-2.2.8 0 1.3.1 1.9.3v-.2c0-.9-.6-1.4-1.7-1.4-.8 0-1.3.2-1.9.4l-.4-1.2c.7-.3 1.5-.6 2.6-.6 2 0 3 1.1 3 2.9v4h-1.6zm-7.6 0v-3.8c0-1.1-.5-1.7-1.4-1.7-.8 0-1.4.6-1.4 1.7v3.8H340v-3.9c0-1.1-.5-1.6-1.4-1.6-.9 0-1.4.6-1.4 1.7v3.8h-1.5v-6.8h1.5v1c.4-.6 1-1.2 2.1-1.2 1 0 1.7.5 2 1.2.6-.7 1.3-1.2 2.3-1.2 1.5 0 2.4.9 2.4 2.6v4.3h-1.7zm-12.2 0v-1.1c-.4.6-1.1 1.2-2.1 1.2-1.5 0-2.4-1-2.4-2.6v-4.3h1.5v3.8c0 1.1.5 1.7 1.4 1.7.9 0 1.5-.6 1.5-1.7v-3.8h1.5v6.8h-1.4zm-8.1 0v-3.8h-4.3v3.8h-1.6v-9h1.6v3.7h4.3v-3.7h1.6v9H324zm-13.7 1.9l-.2-.7c.8-.2 1.2-.6 1.1-1.2h-.7v-1.8h1.7v1.5c0 1.5-.6 2.1-1.9 2.2zm-3-4.8c-.4-.2-.9-.3-1.5-.3-1 0-1.5.4-1.5 1.1 0 .6.6 1 1.3 1 1 0 1.8-.6 1.8-1.4v-.4zm0 2.9v-.8c-.5.6-1.2 1-2.2 1-1.3 0-2.4-.7-2.4-2.1 0-1.5 1.2-2.2 2.7-2.2.8 0 1.3.1 1.9.3v-.2c0-.9-.6-1.4-1.7-1.4-.8 0-1.3.2-1.9.4l-.4-1.2c.7-.3 1.5-.6 2.6-.6 2 0 3 1.1 3 2.9v4h-1.6zm-7.5-5.4v3.3c0 .6.3.8.8.8.3 0 .7-.1 1-.2v1.3c-.4.2-.8.3-1.4.3-1.1 0-1.9-.5-1.9-2v-3.6h-.9v-1.3h.9v-1.9h1.5v1.9h1.8v1.3h-1.8zm-5.2 2.5c-.4-.2-.9-.3-1.5-.3-1 0-1.5.4-1.5 1.1 0 .6.6 1 1.3 1 1 0 1.8-.6 1.8-1.4v-.4zm0 2.9v-.8c-.5.6-1.2 1-2.2 1-1.3 0-2.4-.7-2.4-2.1 0-1.5 1.2-2.2 2.7-2.2.8 0 1.3.1 1.9.3v-.2c0-.9-.6-1.4-1.7-1.4-.8 0-1.3.2-1.9.4l-.4-1.2c.7-.3 1.5-.6 2.6-.6 2 0 3 1.1 3 2.9v4h-1.6zm-9-7.5h-1.8v3.2h1.8c1.2 0 1.9-.7 1.9-1.6.1-1.1-.7-1.6-1.9-1.6zm0 4.6h-1.8v2.9h-1.6v-9h3.5c2.1 0 3.4 1.2 3.4 3 .1 2.1-1.6 3.1-3.5 3.1zm-8.8-2.3c-1.4 0-2.3.9-2.3 2.7v2.6H273v-6.8h1.5v1.5c.4-1 1.2-1.7 2.4-1.7l-.1 1.7zm-7.2 2.3c-.4-.2-.9-.3-1.5-.3-1 0-1.5.4-1.5 1.1 0 .6.6 1 1.3 1 1 0 1.8-.6 1.8-1.4v-.4zm0 2.9v-.8c-.5.6-1.2 1-2.2 1-1.3 0-2.4-.7-2.4-2.1 0-1.5 1.2-2.2 2.7-2.2.8 0 1.3.1 1.9.3v-.2c0-.9-.6-1.4-1.7-1.4-.8 0-1.3.2-1.9.4l-.4-1.2c.7-.3 1.5-.6 2.6-.6 2 0 3 1.1 3 2.9v4h-1.6zm-7.9 0v-3.8h-4.3v3.8h-1.6v-9h1.6v3.7h4.3v-3.7h1.6v9h-1.6z">
+                    </path>
+                    <g fill-rule="evenodd" clip-rule="evenodd">
+                        <path fill="#FFF" d="M308.2-193.9h61.9v58.4h-61.9z"></path>
+                        <path fill="#00A551"
+                            d="M375.4-191.3v-14.5H355l-16.1-11.5-43.2 31v20.6l6.7-5v35.2H317c-.8-2.2-.7-4.8.6-7l16.9-29.5-15.6 3.9c-4.1 1-8.3-1.5-9.3-5.6s1.5-8.2 5.6-9.3l33-8.2c.1 0 .2 0 .3-.1h.1c.2-.1.4-.1.6-.1.2 0 .5-.1.7-.1h1.6c.3 0 .7.1 1 .2.7.2 1.4.4 2.1.8 4 2.3 5.3 7.4 3 11.3l-16 28.2 17.3-4.4c4.1-1 8.3 1.5 9.3 5.6s-1.5 8.2-5.6 9.3l-19.6 5h32.4v-35.2l6.7 5v-20.6l-6.7-5z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <a href="#">BUY</a>
+            <a href="#">HOMES</a>
+            <a href="#">PLOTS</a>
+            <a href="#">COMMERCIAL</a>
+            <a href="#">RENT</a>
+            <a href="#">AGENTS</a>
+            <a href="#">NEW PROJECTS</a>
+        </div>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container text-center">
+
+            <h1>Search properties for sale in Pakistan</h1>
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <button class="option-btn active">BUY</button>
+                <button class="option-btn">RENT</button>
+                <button class="option-btn">PROJECTS</button>
+            </div>
+
+            <!-- Search -->
+            <div class="search-box mx-auto" style="max-width: 900px;">
+                <div class="row g-2 align-items-end">
+                    <div class="col-md-3 text-start">
+                        <label>CITY</label>
+                        <select class="form-select">
+                            <option>Karachi</option>
+                            <option>Lahore</option>
+                            <option>Islamabad</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 text-start">
+                        <label>LOCATION</label>
+                        <input type="text" class="form-control" placeholder="Enter location">
+                    </div>
+
+                    <div class="col-md-3">
+                        <button class="find-btn w-100 py-2">FIND</button>
+                    </div>
+                </div>
+
+                <div class="search-links mt-3 text-start">
+                    <a href="#">More Options</a>
+                    <a href="#">Change Currency</a>
+                    <a href="#">Change Area Unit</a>
+                    <a href="#">Reset Search</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+<section class="browse-properties py-5">
+  <div class="container">
+
+    <h2 class="fw-semibold mb-4">Browse Properties</h2>
+
+    <div class="row g-4">
+
+      <!-- ===== CARD 1 : HOMES ===== -->
+      <div class="col-lg-4">
+        <div class="property-card">
+
+          <div class="card-header-custom">
+            <div class="icon green">🏠</div>
+            <h5>Homes</h5>
+          </div>
+
+          <div class="tabs">
+            <span class="active">Popular</span>
+            <span>Type</span>
+            <span>Area Size</span>
+          </div>
+
+          <div class="items">
+            <div class="item">250 sq yard <small>Houses</small></div>
+            <div class="item">120 sq yard <small>Houses</small></div>
+            <div class="item">80 sq yard <small>Houses</small></div>
+            <div class="item">On Installments <small>Flats</small></div>
+            <div class="item">Low Price <small>Houses</small></div>
+            <div class="item">Under 20 Lacs <small>Flats</small></div>
+          </div>
+
+          <div class="arrow">›</div>
+
+          <div class="dots">
+            <span class="active"></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CARD 2 : PLOTS ===== -->
+      <div class="col-lg-4">
+        <div class="property-card">
+
+          <div class="card-header-custom">
+            <div class="icon green">📍</div>
+            <h5>Plots</h5>
+          </div>
+
+          <div class="tabs">
+            <span class="active">Popular</span>
+            <span>Type</span>
+            <span>Area Size</span>
+          </div>
+
+          <div class="items">
+            <div class="item">80 sq yards <small>Residential Plots</small></div>
+            <div class="item">120 sq yards <small>Residential Plots</small></div>
+            <div class="item">250 sq yards <small>Residential Plots</small></div>
+            <div class="item">500 sq yards <small>Residential Plots</small></div>
+            <div class="item">On Installments <small>Residential Plots</small></div>
+            <div class="item">With Possession <small>Residential Plots</small></div>
+          </div>
+
+          <div class="arrow">›</div>
+
+          <div class="dots">
+            <span class="active"></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CARD 3 : COMMERCIAL ===== -->
+      <div class="col-lg-4">
+        <div class="property-card">
+
+          <div class="card-header-custom">
+            <div class="icon green">🏢</div>
+            <h5>Commercial</h5>
+          </div>
+
+          <div class="tabs">
+            <span class="active">Popular</span>
+            <span>Type</span>
+            <span>Area Size</span>
+          </div>
+
+          <div class="items">
+            <div class="item">Small <small>Offices</small></div>
+            <div class="item">New <small>Offices</small></div>
+            <div class="item">On Installments <small>Shops</small></div>
+            <div class="item">Small <small>Shops</small></div>
+            <div class="item">New <small>Shops</small></div>
+            <div class="item">Running <small>Shops</small></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="explore-zameen py-5">
+  <div class="container">
+
+    <h2 class="fw-semibold mb-4">Explore more on Zameen</h2>
+
+    <div class="row g-4">
+
+      <!-- Item -->
+      <div class="col-lg-3 col-md-6">
+        <div class="explore-item">
+          <div class="icon-box yellow">🏗️</div>
+          <h6>New Projects</h6>
+          <p>The best investment opportunities</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="explore-item">
+          <div class="icon-box blue">🏠</div>
+          <h6>Construction Cost Calculator</h6>
+          <p>Get construction cost estimate</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="explore-item">
+          <div class="icon-box green">🏦</div>
+          <h6>Home Loan Calculator</h6>
+          <p>Find affordable loan packages</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="explore-item">
+          <div class="icon-box pink">📍</div>
+          <h6>Area Guides</h6>
+          <p>Explore housing societies in Pakistan</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="explore-item">
+          <div class="icon-box mint">🗺️</div>
+          <h6>Plot Finder</h6>
+          <p>Find plots in any housing society</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="explore-item">
+          <div class="icon-box purple">📊</div>
+          <h6>Property Index</h6>
+          <p>Track changes in real estate prices</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="explore-item">
+          <div class="icon-box cyan">➗</div>
+          <h6>Area Unit Converter</h6>
+          <p>Convert any area unit instantly</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="explore-item">
+          <div class="icon-box lavender">📈</div>
+          <h6>Property Trends</h6>
+          <p>Find popular areas to buy property</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="fw-bold">Recent Searches</h5>
+        <div class="arrow-btn">
+            <i class="bi bi-arrow-right"></i>
+        </div>
+    </div>
+
+    <div class="row g-3">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="search-card">
+                <div class="d-flex align-items-center mb-1">
+                    <i class="bi bi-search me-2 text-primary"></i>
+                    <h6 class="mb-0">Upper Portions for Rent</h6>
+                </div>
+                <small>All area sizes</small>
+
+                <div class="search-meta mt-2">
+                    <div><i class="bi bi-geo-alt me-1"></i> Karachi</div>
+                    <div><i class="bi bi-tag me-1"></i> Any price</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="search-card">
+                <div class="d-flex align-items-center mb-1">
+                    <i class="bi bi-search me-2 text-primary"></i>
+                    <h6 class="mb-0">Upper Portions for Rent</h6>
+                </div>
+                <small>All area sizes</small>
+
+                <div class="search-meta mt-2">
+                    <div><i class="bi bi-geo-alt me-1"></i> Gulistan-e-Jauhar</div>
+                    <div><i class="bi bi-tag me-1"></i> Any price</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="search-card">
+                <div class="d-flex align-items-center mb-1">
+                    <i class="bi bi-search me-2 text-primary"></i>
+                    <h6 class="mb-0">Upper Portions for Rent</h6>
+                </div>
+                <small>All area sizes</small>
+
+                <div class="search-meta mt-2">
+                    <div><i class="bi bi-geo-alt me-1"></i> Islamabad</div>
+                    <div><i class="bi bi-tag me-1"></i> Any price</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container my-5">
+
+    <!-- ================= Titanium Agencies ================= -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="fw-bold">Titanium Agencies</h5>
+        <div class="d-flex gap-2">
+            <div class="circle-btn"><i class="bi bi-arrow-left text-success"></i></div>
+            <div class="circle-btn"><i class="bi bi-arrow-right text-success"></i></div>
+        </div>
+    </div>
+
+    <div class="row g-3 mb-5">
+        <!-- Agency -->
+        <div class="col-md-3">
+            <div class="agency-card">
+                <img src="https://via.placeholder.com/60" class="agency-logo">
+                <div>
+                    <div class="agency-name">Universal Estate & Dev...</div>
+                    <div class="agency-location"><i class="bi bi-geo-alt text-success"></i> Karachi</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="agency-card">
+                <img src="https://via.placeholder.com/60" class="agency-logo">
+                <div>
+                    <div class="agency-name">A. H Construction</div>
+                    <div class="agency-location"><i class="bi bi-geo-alt text-success"></i> Karachi</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="agency-card">
+                <img src="https://via.placeholder.com/60" class="agency-logo">
+                <div>
+                    <div class="agency-name">Tabani Real Estate</div>
+                    <div class="agency-location"><i class="bi bi-geo-alt text-success"></i> Karachi</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="agency-card">
+                <img src="https://via.placeholder.com/60" class="agency-logo">
+                <div>
+                    <div class="agency-name">NUH Properties</div>
+                    <div class="agency-location"><i class="bi bi-geo-alt text-success"></i> Karachi</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= Zameen Projects ================= -->
+    <div class="projects-wrapper">
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center gap-2">
+                <h5 class="fw-bold mb-0">Zameen Projects</h5>
+                <span class="badge bg-danger rounded-pill px-3">Trending</span>
+            </div>
+            <a href="#" class="text-primary fw-semibold text-decoration-none">
+                View All <i class="bi bi-chevron-right"></i>
+            </a>
+        </div>
+
+        <div class="row g-3">
+
+            <!-- Project Card -->
+            <div class="col-md-3">
+                <div class="project-card position-relative">
+                    <span class="hot-badge">HOT</span>
+                    <img src="https://via.placeholder.com/400x300" class="project-img">
+                    <div class="project-body">
+                        <div class="project-price">PKR 2.88 Crore to 32.1 Crore</div>
+                        <div class="project-name">Zameen Arx, Lahore</div>
+                        <div class="project-meta">Lahore, CBD Punjab</div>
+                        <div class="feature"><i class="bi bi-building"></i> Flats, Penthouse, Offices</div>
+                        <div class="feature"><i class="bi bi-arrows-fullscreen"></i> 225 sqft to 4376 sqft</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="project-card position-relative">
+                    <span class="hot-badge">HOT</span>
+                    <img src="https://via.placeholder.com/400x300" class="project-img">
+                    <div class="project-body">
+                        <div class="project-price">PKR 2.3 Crore to 68.5 Crore</div>
+                        <div class="project-name">Zameen Vault, Lahore</div>
+                        <div class="project-meta">Lahore, NSIT City</div>
+                        <div class="feature"><i class="bi bi-shop"></i> Shops, Offices, Flats</div>
+                        <div class="feature"><i class="bi bi-arrows-fullscreen"></i> 459 sqft to 15394 sqft</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="project-card position-relative">
+                    <span class="hot-badge">HOT</span>
+                    <img src="https://via.placeholder.com/400x300" class="project-img">
+                    <div class="project-body">
+                        <div class="project-price">PKR 1.2 Crore to 8.65 Crore</div>
+                        <div class="project-name">Swiss Mall Gulberg</div>
+                        <div class="project-meta">Lahore, MM Alam Road</div>
+                        <div class="feature"><i class="bi bi-building"></i> Flats, Shops</div>
+                        <div class="feature"><i class="bi bi-arrows-fullscreen"></i> 116 sqft to 1208 sqft</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="project-card position-relative">
+                    <span class="hot-badge">HOT</span>
+                    <img src="https://via.placeholder.com/400x300" class="project-img">
+                    <div class="project-body">
+                        <div class="project-price">PKR 1.57 Crore</div>
+                        <div class="project-name">Zameen Jade</div>
+                        <div class="project-meta">Lahore, Main Blvd</div>
+                        <div class="feature"><i class="bi bi-building"></i> Flats</div>
+                        <div class="feature"><i class="bi bi-arrows-fullscreen"></i> 411 sqft</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container my-5">
+
+<!-- ================= Zameen Community ================= -->
+<h5 class="section-title mb-3">Zameen Community</h5>
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <h6><i class="bi bi-megaphone green"></i> News <a class="link float-end" href="#">View All</a></h6>
+        <ul class="list-unstyled">
+            <li class="mb-2">Islamabad local governance... <small class="text-muted d-block">6 January 2026</small></li>
+            <li>New expo, community centers planned... <small class="text-muted d-block">6 January 2026</small></li>
+        </ul>
+    </div>
+
+    <div class="col-md-4">
+        <h6><i class="bi bi-journal-text green"></i> Blogs <a class="link float-end" href="#">View All</a></h6>
+        <div class="row g-2">
+            <div class="col-6 community-card">
+                <img src="https://via.placeholder.com/150">
+                <small>Zameen Jade Apartments...</small>
+            </div>
+            <div class="col-6 community-card">
+                <img src="https://via.placeholder.com/150">
+                <small>Experience Swiss Mall...</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <h6><i class="bi bi-chat-left-text green"></i> Forums <a class="link float-end" href="#">View All</a></h6>
+        <div class="border rounded p-2 mb-2">Buying Property <small class="text-muted d-block">11k Topics</small></div>
+        <div class="border rounded p-2">Renting Property <small class="text-muted d-block">556 Topics</small></div>
+    </div>
+</div>
+
+<!-- ================= Popular Locations ================= -->
+<h5 class="section-title mb-3">Popular Locations</h5>
+
+<ul class="nav nav-tabs mb-3">
+    <li class="nav-item"><a class="nav-link active green" href="#">For Sale</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">To Rent</a></li>
+</ul>
+
+<!-- ===== PLOTS ===== -->
+<h6 class="fw-bold mt-4">Most Popular Locations for Plots</h6>
+<div class="row">
+    <div class="col-md-4">
+        <strong>Lahore</strong>
+        <ul class="list-unstyled mt-2">
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Plots for sale in DHA Defence (10,436)</li>
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Plots for sale in Bahria Town (1,719)</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <strong>Karachi</strong>
+        <ul class="list-unstyled mt-2">
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Plots for sale in Scheme 33 (3,427)</li>
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Plots for sale in DHA Defence (2,305)</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <strong>Islamabad</strong>
+        <ul class="list-unstyled mt-2">
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Plots for sale in DHA Defence (5,198)</li>
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Plots for sale in Gulberg (3,064)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ===== FLATS ===== -->
+<h6 class="fw-bold mt-4">Most Popular Locations for Flats</h6>
+<div class="row">
+    <div class="col-md-4">
+        <strong>Lahore</strong>
+        <ul class="list-unstyled mt-2">
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Flats for sale in Askari (932)</li>
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Flats for sale in Gulberg (552)</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <strong>Karachi</strong>
+        <ul class="list-unstyled mt-2">
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Flats for sale in DHA Defence (2,385)</li>
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Flats for sale in Gulistan-e-Jauhar (1,305)</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <strong>Islamabad</strong>
+        <ul class="list-unstyled mt-2">
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Flats for sale in DHA Defence (784)</li>
+            <li class="list-item"><i class="bi bi-arrow-up-right"></i>Flats for sale in Gulberg (392)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ===== APP PROMO ===== -->
+<div class="row align-items-center my-5 bg-light rounded p-4 promo">
+    <div class="col-md-6">
+        <h4 class="green fw-bold">Get the Zameen App</h4>
+        <p>Buy and Rent Property faster and better using our app.</p>
+        
+    </div>
+    <div class="col-md-6 text-end">
+        <img src="https://via.placeholder.com/120">
+    </div>
+</div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer pt-5 pb-3">
+    <div class="container">
+
+        <div class="row mb-4">
+            <!-- Company -->
+            <div class="col-md-2 col-6 mb-3">
+                <h6 class="text-white">Company</h6>
+                <a href="#">About Us</a><br>
+                <a href="#">Contact Us</a><br>
+                <a href="#">Jobs</a><br>
+                <a href="#">Help & Support</a><br>
+                <a href="#">Advertise on Zameen</a><br>
+                <a href="#">Terms of Use</a>
+            </div>
+
+            <!-- Connect -->
+            <div class="col-md-2 col-6 mb-3">
+                <h6 class="text-white">Connect</h6>
+                <a href="#">Blog</a><br>
+                <a href="#">News</a><br>
+                <a href="#">Forum</a><br>
+                <a href="#">Expo</a><br>
+                <a href="#">Real Estate Agents</a><br>
+                <a href="#">Add Property</a>
+            </div>
+
+            <!-- Head Office -->
+            <div class="col-md-3 col-12 mb-3">
+                <h6 class="text-white">Head Office</h6>
+                <p class="mb-1">
+                    <i class="bi bi-geo-alt"></i>
+                    Pearl One, 94-B/1, MM Alam Road,<br>
+                    Gulberg III, Lahore, Pakistan
+                </p>
+                <p class="mb-1">
+                    <i class="bi bi-telephone"></i>
+                    0800-ZAMEEN (92636)
+                </p>
+                <p class="mb-0">
+                    <i class="bi bi-clock"></i>
+                    Monday to Sunday 9AM to 6PM
+                </p>
+            </div>
+
+            <!-- Roshan Digital Account -->
+            <div class="col-md-3 col-12 mb-3">
+                <h6 class="text-white">Roshan Digital Account</h6>
+                <p class="mb-2">
+                    Invest in Pakistan Real Estate using Roshan Digital Account
+                </p>
+                <img src="https://via.placeholder.com/140x50" alt="Roshan Digital">
+            </div>
+
+            <!-- Social -->
+            <div class="col-md-2 col-12 mb-3">
+                <h6 class="text-white">Get Connected</h6>
+                <div class="d-flex gap-3 fs-5">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-youtube"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-twitter-x"></i>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-secondary">
+
+        <!-- Bottom -->
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <small>© Copyright 2007-2026 Zameen.com. All Rights Reserved</small>
+            <a href="#" class="text-decoration-none text-light">
+                TOP <i class="bi bi-arrow-up-circle"></i>
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+
+</body>
+
+</html>
